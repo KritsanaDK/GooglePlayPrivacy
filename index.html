@@ -1,32 +1,75 @@
+```html
 <!doctype html>
 <html lang="th">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Privacy Policy – Taz's Eng App</title>
-  <meta name="description" content="Privacy Policy for Taz's Eng App. This app does not collect, store, share, or use personal data for advertising or tracking.">
+  <title>Privacy Policy – App Name</title>
+  <meta name="description"
+        content="Privacy Policy for App Name. This app does not collect, store, or share personal information.">
+
   <style>
     :root {
       --bg: #ffffff;
-      --fg: #0f172a; /* slate-900 */
-      --muted: #475569; /* slate-600 */
-      --card: #f8fafc; /* slate-50 */
-      --border: #e2e8f0; /* slate-200 */
-      --accent: #0ea5e9; /* sky-500 */
+      --fg: #0f172a;
+      --muted: #475569;
+      --border: #e2e8f0;
+      --accent: #0ea5e9;
     }
-    html, body { height: 100%; }
+
+    html, body {
+      height: 100%;
+    }
+
     body {
       margin: 0;
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Noto Sans, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      font-family:
+        ui-sans-serif,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        "Noto Sans",
+        "Helvetica Neue",
+        Arial,
+        sans-serif;
       color: var(--fg);
-      background: radial-gradient(60% 50% at 30% 10%, #f0f9ff 0%, transparent 40%),
-                  radial-gradient(60% 50% at 70% 0%, #f8fafc 0%, transparent 40%),
-                  var(--bg);
+      background:
+        radial-gradient(
+          60% 50% at 30% 10%,
+          #f0f9ff 0%,
+          transparent 40%
+        ),
+        radial-gradient(
+          60% 50% at 70% 0%,
+          #f8fafc 0%,
+          transparent 40%
+        ),
+        var(--bg);
     }
-    .wrap { max-width: 820px; margin: 48px auto; padding: 0 20px 64px; }
-    header { text-align: center; margin-bottom: 28px; }
-    h1 { font-size: clamp(28px, 4vw, 40px); margin: 0 0 8px; }
-    .subtitle { color: var(--muted); font-size: 14px; }
+
+    .wrap {
+      max-width: 820px;
+      margin: 48px auto;
+      padding: 0 20px 64px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 28px;
+    }
+
+    h1 {
+      font-size: clamp(28px, 4vw, 40px);
+      margin: 0 0 8px;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
     .card {
       background: #fff;
       border: 1px solid var(--border);
@@ -34,65 +77,209 @@
       box-shadow: 0 10px 30px rgba(2, 6, 23, 0.06);
       padding: 24px;
     }
-    h2 { font-size: 18px; margin: 24px 0 8px; }
-    p, li { line-height: 1.75; font-size: 16px; }
-    .lang-label { display:inline-block; font-size:12px; color:#0369a1; background:#e0f2fe; border:1px solid #bae6fd; border-radius:999px; padding:2px 8px; }
-    .muted { color: var(--muted); }
-    .footer { margin-top: 28px; font-size: 14px; color: var(--muted); }
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .hr { height:1px; background:var(--border); margin:24px 0; border:0; }
+
+    h2 {
+      font-size: 18px;
+      margin: 24px 0 8px;
+    }
+
+    h2:first-of-type {
+      margin-top: 16px;
+    }
+
+    p,
+    li {
+      line-height: 1.75;
+      font-size: 16px;
+    }
+
+    .lang-label {
+      display: inline-block;
+      font-size: 12px;
+      color: #0369a1;
+      background: #e0f2fe;
+      border: 1px solid #bae6fd;
+      border-radius: 999px;
+      padding: 2px 8px;
+    }
+
+    .footer {
+      margin-top: 28px;
+      font-size: 14px;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .hr {
+      height: 1px;
+      background: var(--border);
+      margin: 24px 0;
+      border: 0;
+    }
+
+    @media (max-width: 600px) {
+      .wrap {
+        margin: 24px auto;
+        padding: 0 14px 40px;
+      }
+
+      .card {
+        padding: 20px;
+        border-radius: 12px;
+      }
+
+      p,
+      li {
+        font-size: 15px;
+      }
+    }
   </style>
 </head>
+
 <body>
+
   <div class="wrap">
+
     <header>
-      <h1>Privacy Policy – Taz's Eng</h1>
-      <div class="subtitle">Last updated: 19 August 2025</div>
+      <h1>Privacy Policy – App Name</h1>
+      <div class="subtitle">
+        Last updated: 29 August 2026
+      </div>
     </header>
 
     <!-- ภาษาไทย -->
-    <div class="card" id="th" lang="th">
+    <section class="card" id="th" lang="th">
+
       <div class="lang-label">ภาษาไทย</div>
+
       <h2>นโยบายความเป็นส่วนตัว</h2>
-      <p>แอป <strong>Taz's Eng</strong> เคารพและให้ความสำคัญกับความเป็นส่วนตัวของผู้ใช้ เอกสารนี้อธิบายวิธีที่เราเก็บ ใช้ หรือเปิดเผยข้อมูล</p>
-      <ul>
-        <li>แอปนี้ <strong>ไม่เก็บ ไม่บันทึก และไม่ประมวลผลข้อมูลส่วนบุคคล</strong> ของผู้ใช้</li>
-        <li>แอปนี้ <strong>ไม่แชร์ข้อมูลกับบุคคลที่สาม</strong></li>
-        <li>แอปนี้ <strong>ไม่ใช้คุกกี้ ไม่ใช้ตัวระบุโฆษณา และไม่ใช้เทคโนโลยีติดตามใด ๆ</strong></li>
-        <li>หากในอนาคตมีการเพิ่มฟีเจอร์ที่เกี่ยวข้องกับการเก็บข้อมูล เราจะอัปเดตนโยบายนี้และแจ้งให้ผู้ใช้ทราบทันที</li>
-      </ul>
-      <h2>การติดต่อ</h2>
-      <p>หากมีคำถามเกี่ยวกับนโยบายความเป็นส่วนตัว กรุณาติดต่อ: 
-        <a href="mailto:kritsana.dk@gmail.com">kritsana.dk@gmail.com</a>
+
+      <p>
+        แอป <strong>App Name</strong>
+        เคารพและให้ความสำคัญกับความเป็นส่วนตัวของผู้ใช้
+        นโยบายนี้อธิบายถึงแนวทางเกี่ยวกับข้อมูลที่แอปจัดการ
       </p>
-    </div>
+
+      <h2>การเก็บรวบรวมข้อมูล</h2>
+
+      <ul>
+        <li>
+          แอปนี้ <strong>ไม่เก็บรวบรวมข้อมูลส่วนบุคคล</strong>
+          ของผู้ใช้
+        </li>
+
+        <li>
+          แอปนี้ <strong>ไม่จัดเก็บข้อมูลส่วนบุคคล</strong>
+          บนอุปกรณ์หรือเซิร์ฟเวอร์
+        </li>
+
+        <li>
+          แอปนี้ <strong>ไม่แชร์ข้อมูลส่วนบุคคลกับบุคคลที่สาม</strong>
+        </li>
+
+        <li>
+          แอปนี้ <strong>ไม่ใช้คุกกี้ ตัวระบุโฆษณา
+          หรือเทคโนโลยีติดตาม</strong>
+        </li>
+      </ul>
+
+      <h2>การเปลี่ยนแปลงนโยบาย</h2>
+
+      <p>
+        หากมีการเปลี่ยนแปลงฟีเจอร์หรือแนวทางการจัดการข้อมูล
+        เราจะอัปเดต Privacy Policy นี้ให้สอดคล้องกับการเปลี่ยนแปลงดังกล่าว
+      </p>
+
+      <h2>การติดต่อ</h2>
+
+      <p>
+        หากมีคำถามเกี่ยวกับนโยบายความเป็นส่วนตัว
+        กรุณาติดต่อ:
+        <a href="mailto:YOUR_EMAIL@example.com">
+          YOUR_EMAIL@example.com
+        </a>
+      </p>
+
+    </section>
 
     <div class="hr" role="separator" aria-hidden="true"></div>
 
     <!-- English -->
-    <div class="card" id="en" lang="en">
-      <div class="lang-label">English</div>
-      <h2>Privacy Policy</h2>
-      <p><strong>Taz's Eng</strong> respects and values your privacy. This Privacy Policy explains how we collect, use, and disclose information.</p>
-      <ul>
-        <li>This app <strong>does not collect, store, or process any personal information</strong>.</li>
-        <li>This app <strong>does not share any data with third parties</strong>.</li>
-        <li>This app <strong>does not use cookies, advertising identifiers, or tracking technologies</strong>.</li>
-        <li>If we ever introduce features that require data collection, this Privacy Policy will be updated and users will be notified.</li>
-      </ul>
-      <h2>Contact</h2>
-      <p>If you have any questions about this Privacy Policy, please contact: 
-        <a href="mailto:kritsana.dk@gmail.com">kritsana.dk@gmail.com</a>
-      </p>
-    </div>
+    <section class="card" id="en" lang="en">
 
-    <p class="footer">© <span id="year"></span> Taz's Eng. All rights reserved.</p>
+      <div class="lang-label">English</div>
+
+      <h2>Privacy Policy</h2>
+
+      <p>
+        <strong>App Name</strong>
+        respects and values your privacy.
+        This Privacy Policy explains how this app handles user information.
+      </p>
+
+      <h2>Data Collection</h2>
+
+      <ul>
+        <li>
+          This app <strong>does not collect personal information</strong>
+          from users.
+        </li>
+
+        <li>
+          This app <strong>does not store personal information</strong>
+          on devices or servers.
+        </li>
+
+        <li>
+          This app <strong>does not share personal information
+          with third parties</strong>.
+        </li>
+
+        <li>
+          This app <strong>does not use cookies, advertising identifiers,
+          or tracking technologies</strong>.
+        </li>
+      </ul>
+
+      <h2>Changes to This Privacy Policy</h2>
+
+      <p>
+        If the app's features or data practices change,
+        this Privacy Policy will be updated accordingly.
+      </p>
+
+      <h2>Contact</h2>
+
+      <p>
+        If you have any questions about this Privacy Policy,
+        please contact:
+        <a href="mailto:YOUR_EMAIL@example.com">
+          YOUR_EMAIL@example.com
+        </a>
+      </p>
+
+    </section>
+
+    <p class="footer">
+      © <span id="year"></span> App Name. All rights reserved.
+    </p>
+
   </div>
 
   <script>
-    // Auto insert current year in footer
-    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
   </script>
+
 </body>
 </html>
+```
