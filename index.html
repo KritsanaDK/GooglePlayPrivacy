@@ -84,6 +84,10 @@
       padding-left: 22px;
     }
 
+    li {
+      margin-bottom: 10px;
+    }
+
     .lang-label {
       display: inline-block;
       font-size: 12px;
@@ -130,7 +134,7 @@
     <header>
       <h1>Privacy Policy – KSN Scanner</h1>
       <div class="subtitle">
-        Last updated: 10 September 2026
+        Last updated: 13 September 2026
       </div>
     </header>
 
@@ -164,17 +168,24 @@
         <li>
           <strong>การซื้อภายในแอป (Google Play In-App Billing):</strong> สำหรับการสมัครสมาชิก KSN Scanner Pro ข้อมูลการทำธุรกรรมทางการเงินทั้งหมดจะได้รับการประมวลผลโดยตรงผ่านระบบชำระเงินของ Google Play Store เราไม่ได้รับหรือจัดเก็บข้อมูลบัตรเครดิตหรือข้อมูลทางการเงินของท่าน
         </li>
+        <li>
+          <strong>การแชร์ไฟล์ (File Sharing):</strong> ท่านสามารถแชร์ไฟล์ PDF ที่สร้างขึ้น (รายการเดียวหรือหลายรายการพร้อมกัน) ไปยังแอปพลิเคชันอื่นได้ผ่านระบบ Share Sheet ของอุปกรณ์ (เช่น Gmail, LINE, AirDrop ฯลฯ) การดำเนินการนี้เกิดขึ้นจากความตั้งใจของท่านเองทั้งสิ้น และข้อมูลที่ส่งออกไปจะอยู่ภายใต้นโยบายความเป็นส่วนตัวของแอปปลายทางที่ท่านเลือก ทางเราไม่มีการเข้าถึงหรือรับรู้เนื้อหาหลังจากที่ท่านแชร์ออกไปแล้ว
+        </li>
+        <li>
+          <strong>การอัปโหลดไปยังเซิร์ฟเวอร์ (FTP / REST API Upload):</strong> แอปพลิเคชันมีฟังก์ชันเสริมสำหรับอัปโหลดเอกสารไปยัง FTP Server หรือ REST API Server ที่ <em>ท่านกำหนดค่าเอง</em> เราจะส่งเฉพาะไฟล์ PDF ที่ท่านเลือกไปยัง endpoint ที่ท่านระบุไว้เท่านั้น แอปไม่ได้จัดเก็บข้อมูล Server credentials ในรูปแบบที่ไม่ปลอดภัย และเราไม่มีการเข้าถึงหรือควบคุมเซิร์ฟเวอร์ปลายทางที่ท่านกำหนดขึ้นเอง
+        </li>
       </ul>
 
       <h2>4. การแชร์และการเปิดเผยข้อมูล</h2>
       <p>
-        เรา<strong>ไม่มีนโยบายขาย ให้เช่า หรือแชร์ข้อมูลส่วนบุคคลหรือไฟล์เอกสารของผู้ใช้กับบุคคลภายนอก</strong> เอกสารทั้งหมดเป็นกรรมสิทธิ์ของผู้ใช้แต่เพียงผู้เดียว
+        เรา<strong>ไม่มีนโยบายขาย ให้เช่า หรือแชร์ข้อมูลส่วนบุคคลหรือไฟล์เอกสารของผู้ใช้กับบุคคลภายนอก</strong> เอกสารทั้งหมดเป็นกรรมสิทธิ์ของผู้ใช้แต่เพียงผู้เดียว การส่งหรือแชร์ไฟล์ใดๆ ที่เกิดขึ้นภายในแอปเป็นการกระทำโดยเจตนาของผู้ใช้เองผ่าน Share Sheet ของระบบ หรือฟังก์ชันอัปโหลดที่ผู้ใช้กำหนดค่าเอง
       </p>
 
       <h2>5. การจัดเก็บและการลบข้อมูล (Data Retention & Deletion)</h2>
       <ul>
         <li><strong>ข้อมูลในเครื่อง:</strong> ท่านสามารถลบไฟล์เอกสาร PDF หรือรูปภาพได้ตลอดเวลาผ่านหน้าประวัติในแอป หรือลบได้โดยการล้างแคช/ข้อมูลแอป หรือถอนการติดตั้งแอปพลิเคชัน</li>
         <li><strong>ข้อมูลบน Google Drive:</strong> ท่านสามารถจัดการและลบไฟล์เอกสารที่อัปโหลด หรือยกเลิกการเชื่อมต่อสิทธิ์ของแอปได้ตลอดเวลาผ่านการตั้งค่าบัญชี Google ของท่าน</li>
+        <li><strong>ไฟล์ที่แชร์ไปยังแอปอื่น:</strong> ทางเราไม่มีอำนาจในการลบหรือเรียกคืนไฟล์ที่ท่านได้แชร์ออกไปยังแอปพลิเคชันอื่นแล้ว กรุณาติดต่อแอปปลายทางโดยตรงหากต้องการลบข้อมูลดังกล่าว</li>
       </ul>
 
       <h2>6. การติดต่อเรา</h2>
@@ -214,23 +225,30 @@
         <li>
           <strong>Google Play Billing:</strong> For KSN Scanner Pro subscriptions, all payment transactions are handled securely by Google Play In-App Billing. We do not collect or store your payment card details.
         </li>
+        <li>
+          <strong>File Sharing (System Share Sheet):</strong> You may share your generated PDF files — individually or as a batch — to other apps via your device's native Share Sheet (e.g., Gmail, LINE, WhatsApp, AirDrop, etc.). This action is entirely user-initiated. Once a file is shared, it is governed solely by the privacy policy of the receiving application. We do not access or track your document content after it has been shared.
+        </li>
+        <li>
+          <strong>FTP / REST API Upload:</strong> The app provides an optional feature to upload documents to an FTP server or REST API endpoint that <em>you configure yourself</em>. Only the PDF file(s) you explicitly select are transmitted to the endpoint you specify. We do not store server credentials insecurely and have no access to or control over your self-configured destination server.
+        </li>
       </ul>
 
       <h2>4. Data Sharing and Disclosure</h2>
       <p>
-        We <strong>do not sell, rent, trade, or share</strong> your personal information or document files with third parties. Your documents remain entirely your own.
+        We <strong>do not sell, rent, trade, or share</strong> your personal information or document files with third parties. Your documents remain entirely your own. Any file transfer or sharing that occurs within the app is entirely user-initiated — either via the system Share Sheet or an upload destination configured by you.
       </p>
 
       <h2>5. Data Retention and Deletion</h2>
       <ul>
         <li><strong>Local Files:</strong> You can delete any scanned document directly inside the app, or remove all data by uninstalling the application.</li>
         <li><strong>Google Drive Files:</strong> You can delete your uploaded documents or revoke app permissions at any time via your Google Account security settings.</li>
+        <li><strong>Shared Files:</strong> We are unable to delete or recall files that you have already shared to external applications. Please contact the receiving app directly if you wish to remove such content.</li>
       </ul>
 
       <h2>6. Contact Us</h2>
       <p>
         If you have any questions or inquiries regarding this Privacy Policy, please contact:<br>
-        Email: <a href="kritsana.dk@gmail.com">kritsana.dk@gmail.com</a>
+        Email: <a href="mailto:kritsana.dk@gmail.com">kritsana.dk@gmail.com</a>
       </p>
     </section>
 
@@ -246,3 +264,4 @@
 
 </body>
 </html>
+
